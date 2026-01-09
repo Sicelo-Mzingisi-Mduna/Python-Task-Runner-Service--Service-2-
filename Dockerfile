@@ -25,6 +25,6 @@ CMD [
    --type python \
    --broker-host 0.0.0.0 \
    --broker-port 5679 \
-   --auth-token \"a9x4HbP1YzW8c3T2sNQdF0RZ6BeY\""
+   --auth-token \"$N8N_RUNNERS_AUTH_TOKEN\""
 ]
 
