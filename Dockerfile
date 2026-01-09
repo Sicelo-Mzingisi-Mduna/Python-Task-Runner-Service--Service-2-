@@ -18,13 +18,6 @@ ENV NODE_ENV=production
 EXPOSE 5679
 
 ENTRYPOINT ["tini", "--"]
-CMD [
-  "sh",
-  "-c",
-  "n8n task-runner start \
-   --type python \
-   --broker-host 0.0.0.0 \
-   --broker-port 5679 \
-   --auth-token \"$N8N_RUNNERS_AUTH_TOKEN\""
-]
+CMD ["sh", "-c", "n8n task-runner start --type python --broker-host 0.0.0.0 --broker-port 5679 --auth-token \"$N8N_RUNNERS_AUTH_TOKEN\""]
+
 
