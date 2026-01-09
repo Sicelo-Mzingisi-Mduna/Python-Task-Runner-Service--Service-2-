@@ -15,7 +15,7 @@ WORKDIR /home/node
 USER node
 
 ENV NODE_ENV=production
-EXPOSE 5679  # broker port
+EXPOSE 5679
 
 ENTRYPOINT ["tini", "--"]
 CMD ["n8n", "task-runner", "python", "--broker-host", "0.0.0.0", "--broker-port", "5679", "--auth-token", "super-secret-token"]
